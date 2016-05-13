@@ -47,8 +47,11 @@ def div_group(group,n):
 
 def main():
 	# scanPort*.py <target_port> <start_ip-- end_ip> <线程数>
-	print 'starting at:', ctime()
 	#获取需要测试的端口
+	if sys.argv[1] == "-h":
+		print "useage:  python scanPort*.py <target_port> <start_ip-end_ip> <number of threads>"
+		exit()
+	print 'starting at:', ctime()
 	target_port = int(sys.argv[1])
 	#获取线程数
 	n = int(sys.argv[3])
