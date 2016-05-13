@@ -1,10 +1,10 @@
-加入使用方法及说明
+使用方法及说明
 
-# scanPort*.py <target_port> <start_ip-- end_ip> <线程数>
+# scanPort*.py <target_port> <start_ip-- end_ip> <number of threads>
 
 功能：
 扫描某个IP段
-下一版本加上命令行使用帮助
+加上命令行使用帮助,使用“-h” 得到使用说明
 
 修复bug:
 单个线程只能做一次socket.connect_ex
