@@ -49,7 +49,7 @@ def main():
 	# scanPort*.py <target_port> <start_ip-- end_ip> <线程数>
 	#获取需要测试的端口
 	if sys.argv[1] == "-h":
-		print "useage:  python scanPort*.py <target_port> <start_ip-end_ip> <number of threads>"
+		print "useage:  python scanPort*.py <target_ip> <start_port-end_port> <number of threads>"
 		exit()
 	print 'starting at:', ctime()
 	target_port = int(sys.argv[1])
@@ -59,7 +59,7 @@ def main():
 	group = range(ip2int(sys.argv[2].split('-')[0]),ip2int(sys.argv[2].split('-')[1])+1)
 	# 根据线程数n使用切隔函数将数据切成相应的份数
 	gs2=div_group(group,n)
-	print gs2
+	#print gs2
 	threads = []
 
 
